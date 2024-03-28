@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Four Refactoring</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <h1>Connect Four Refactoring</h1>
+
+    <div id="form-container">
+        <form id="gameForm">
+            <label for="player1name">Player 1 Name:</label>
+            <input id="player1name" type="text" placeholder="Player 1">
+            <label for="player1input">Player 1 Color:</label>
+            <input id="player1input" type="color">
+
+            <label for="player2name">Player 2 Name:</label>
+            <input id="player2name" type="text" placeholder="Player 2">
+            <label for="player2input">Player 2 Color:</label>
+            <input id="player2input" type="color">
+            
+            <button id="start-btn">Start Game</button>
+        </form>
+    </div>
+
+    <div id="board"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
