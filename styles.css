@@ -40,12 +40,68 @@ html{
   
 }
 
-h1{
-  color:red;
+
+
+#form-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh; 
+}
+#gameForm{
+  text-align: center;
+}
+#start-btn{
+  margin-top: 20px;
+}
+
+*{
+  font-family: lucida console;
+  color:black;
+}
+
+#game-container {
+  position: relative;
+}
+
+#play-again-btn {
+  position: absolute;
+  top: 25%; /* Adjust as needed */
+  right: 50%; /* Adjust as needed */
 
 }
-label{
-  color : blue;
-
+#exit-btn{
+  position:absolute;
+  top:25%;
+  right:40%
 }
 
+@media screen and (max-width: 1500px) {
+  /* Adjust the button position for small screens */
+  #play-again-btn {
+      top: 25%; /* New top position for small screens */
+      right: 20% ; /* New right position for small screens */
+  }
+  #exit-btn{
+    top : 25%;
+    right:10%;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* Adjust the button position for small screens */
+  #play-again-btn {
+      top: 25%; /* New top position for small screens */
+      right: 50% ; /* New right position for small screens */
+  }
+  #exit-btn{
+    top:25%;
+    right:40%;
+  }
+  #board{
+    display:none;
+  }
+}
+
+#play-again-btn , #exit-btn{
+  background-color: white;
+}
